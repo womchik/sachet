@@ -18,11 +18,10 @@ const SmscRequestTimeout = time.Second * 60
 type Smsc struct {
 	User     string
 	Password string
-	ApiId    string
 }
 
 func NewSmsc(config SmscConfig) *Smsc {
-	Smsc := &Smsc{User: config.User, Password: config.Password, ApiId: config.ApiId}
+	Smsc := &Smsc{User: config.User, Password: config.Password}
 	return Smsc
 }
 
