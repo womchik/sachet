@@ -50,7 +50,7 @@ var config struct {
 		Sipgate     sipgate.Config
 		Pushbullet  pushbullet.Config
 		NowSms      nowsms.Config
-		Smsc        smsc.Config
+		Smsc        smsc.SmscConfig
 	}
 
 	Receivers []ReceiverConf
