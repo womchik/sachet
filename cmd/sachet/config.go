@@ -18,6 +18,7 @@ import (
 	"github.com/messagebird/sachet/provider/telegram"
 	"github.com/messagebird/sachet/provider/turbosms"
 	"github.com/messagebird/sachet/provider/twilio"
+	"github.com/messagebird/sachet/provider/smsc"
 
 	"github.com/prometheus/alertmanager/template"
 	"gopkg.in/yaml.v2"
@@ -49,6 +50,7 @@ var config struct {
 		Sipgate     sipgate.Config
 		Pushbullet  pushbullet.Config
 		NowSms      nowsms.Config
+		Smsc        smsc.Config
 	}
 
 	Receivers []ReceiverConf
