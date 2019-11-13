@@ -192,7 +192,7 @@ func providerByName(name string) (sachet.Provider, error) {
 	case "nowsms":
 		return nowsms.NewNowSms(config.Providers.NowSms), nil
 	case "smsc":
-		return nowsms.NewNowSms(config.Providers.Smsc), nil
+		return smsc.NewSmsc(config.Providers.Smsc), nil
 	}
 
 	return nil, fmt.Errorf("%s: Unknown provider", name)
